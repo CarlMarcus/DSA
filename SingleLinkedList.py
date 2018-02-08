@@ -13,8 +13,9 @@ class SListNode(): #支持存储数据和后继节点指针的获取和修改
         self.elem = elm
         self.next = pnext
 
-    def __repr__(self): #无论是直接调用Slistnode实例还是打印Slistnode实例，都有直观的输出（可有可无）
+    def __str__(self): #无论是直接调用Slistnode实例还是打印Slistnode实例，都有直观的输出（可有可无）
         return str(self.elem)
+    __repr__ = __str__
 
     def getItem(self):  #获取节点存储的数据
         return self.elem
